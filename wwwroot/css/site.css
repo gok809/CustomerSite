@@ -1,0 +1,201 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+  list-style:none;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.navbar{
+    padding:0;
+}
+
+.navbar-nav {
+    position:relative;
+    top:0;
+    height:50px;
+}
+
+.navbar-nav .nav-item a.menu{
+    padding: 15px 0 ;
+    text-decoration: none;
+}
+
+
+.navbar .children {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    min-width: 130px;
+    width: 150px;
+    background-color: #fff;
+    list-style:none;
+    border: solid 1px #dbdbdb;
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.navbar .navbar-nav li .children {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-75deg);
+    transform: rotateX(-75deg);
+    visibility: hidden;
+}
+
+.navbar ul li:hover > .children {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+.navbar ul li .children .children{
+	left: 100%;
+	top: 0;
+}
+.navbar ul li.last .children {
+    right: 0;
+    left: auto;
+}
+.navbar ul li.last .children .children{
+	right: 100%;
+	left: auto;
+}
+.navbar ul li.last .children {
+    right: 0;
+    left: auto;
+}
+
+.navbar ul li .children li {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar ul li .children a {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 16px 30px;
+    letter-spacing: normal;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.flex_center {
+    align-items: center;
+    justify-content: center;   
+}
+
+.container .text-center .mt-10 {
+    margin-top: 10rem !important;
+}
+
+.container .text-center .mt_3 {
+    margin-top: 3rem !important ;
+}
+
+.d-inline .outline0 {
+    outline:none;
+}
+
+.d-inline .w-85 {
+    width: 85% !important;
+}
+
+.w-300px{
+    min-width:300px !important; 
+}
+
+.t10_r10{
+    top:10%;
+    right:10%;
+}
+
+.min-h-200 {
+    min-height: 200px;
+}
+
+.position-absolute .w-180px {
+    width: 180px !important;
+}
+
+.position-absolute .w-180px input{
+    margin: 3px 0;
+}
+
+.position-absolute .w-180px button{
+    margin: 10px 0;
+}
+
+.btn_login {
+    border: 0;
+    outline: 0;
+    background-color: #f1f1f1;
+}
+.btn_join {
+    border: 0;
+    outline: 0;
+    background-color: #dcdcdc;
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
